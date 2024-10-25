@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-17 AS build
+FROM maven:3.6.3-openjdk-8 AS build
 WORKDIR /usr/src/helloprint
 COPY . /usr/src/helloprint/
 RUN mvn clean package
